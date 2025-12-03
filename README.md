@@ -1,6 +1,6 @@
 # City Pulse
 
-![City Pulse Banner](path/to/banner.png)
+![City Pulse Banner](https://github.com/user-attachments/assets/2fedc557-5061-44c1-a1f1-205af8e120a9)
 
 City Pulse is a comprehensive web application designed to provide real-time insights and data about cities. It features a modern dashboard for monitoring various environmental and urban metrics, powered by AI-driven analysis.
 
