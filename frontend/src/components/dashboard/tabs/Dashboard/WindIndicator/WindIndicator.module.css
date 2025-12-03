@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;600&display=swap');
+
+.container {
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    user-select: none;
+}
+
+/* SVG Layers */
+.gaugeRing, .gaugeIndicator {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+}
+
+.gaugeSvg {
+    width: 100%; height: 100%;
+    overflow: visible;
+}
+
+.cardinalLabel {
+    font-size: 6px;
+    fill: rgba(255, 255, 255, 0.4);
+    text-anchor: middle;
+    font-weight: 600;
+}
+
+.cardinalLabelN {
+    fill: #fde047;
+}
+
+/* Animated Rotation */
+.gaugeIndicator {
+    transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+    will-change: transform;
+}
+
+/* Text Layout */
+.gaugeData {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 10;
+}
+
+.labelTop {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+}
+
+.directionText {
+    margin-top: -10px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.deg {
+    color: #94a3b0;
+    margin-right: 6px;
+}
+
+.speedGroup {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.speedVal {
+    font-size: 3.5rem;
+    font-weight: 100;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.speedUnit {
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.7);
+    margin-left: 8px;
+    padding-top: 20px;
+}
+
+.gustRow {
+    position: absolute;
+    bottom: 15%;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.gustVal {
+    color: white;
+    font-weight: 500;
+}
+
+.gustIcon {
+    font-family: monospace;
+    transform: rotate(180deg);
+    display: inline-block;
+    font-size: 10px;
+}
+
+/* --- BACKGROUND STYLES --- */
+.widgetWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('wind-direction-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.widgetWrapper::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+.contentRelative {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+.container {
+    position: relative;
+    color: white;
+    user-select: none;
+}
