@@ -28,8 +28,7 @@ City Pulse is a comprehensive web application designed to provide real-time insi
 - **Framework**: Express.js
 - **Database**: MongoDB (Mongoose)
 - **Authentication**: Passport.js (Google OAuth2), JWT
-- **Security**: Arcjet, Helmet (implied), CORS
-- **Workflow**: Upstash Workflow
+- **Security**: Arcjet, CORS
 
 ## Prerequisites
 
@@ -42,8 +41,8 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd "City Pulse"
+git clone https://github.com/lucifer3618/City-Pulse.git
+cd "City-Pulse"
 ```
 
 ### 2. Backend Setup
@@ -65,8 +64,6 @@ JWT_SECRET=your_jwt_secret_key
 JWT_EXPIRES_IN=1d
 ARCJET_ENV=development
 ARCJET_KEY=your_arcjet_key
-QSTASH_URL=your_qstash_url
-QSTASH_TOKEN=your_qstash_token
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 MONGO_SECRET=your_mongo_session_secret
